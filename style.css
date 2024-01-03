@@ -1,0 +1,26 @@
+/*Changement font pour toutes les pages*/
+body {
+  font-family: "Play", sans-serif;
+}
+
+/*Changement font et taille nom en haut de la page*/
+#nom {
+  font-family: "New Tegomin", sans-serif;
+  font-size: 4em;
+}
+
+/*Taille photo de profil*/
+#profil {
+  max-width: 30%;
+}
+
+/*Enlève les flèches sur l'input du numéro de téléphone dans le formulaire de la page contact.html*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#git, #discord, #yt, #insta {
+  max-width: 50px;
+}
