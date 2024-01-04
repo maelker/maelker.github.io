@@ -142,4 +142,44 @@ La commande revert permet de créer un nouveau commit qui "annule" les actions d
 
 $git revert <commit>
 
-Voici les commandes que j'ai vue lors de mon premier cours sur Git
+
+__________________________________________________________________________
+
+Learning Git Branching:
+https://learngitbranching.js.org/
+
+
+Commandes :
+
+$git commit
+    --amend
+$git cherry-pick
+$git reset
+    --hard
+    --soft
+$git revert
+$git merge
+    --no-ff
+    --squash
+$git mergeMR --delete-after-merge
+$git rebase
+    -i
+    --solution-ordering
+    --interactive-test
+    --aboveAll
+    -p
+    --preserve-merges
+    --onto
+$git checkout
+    -b
+    -B
+    -
+$git tag
+    -d
+
+
+
+
+
+
+
