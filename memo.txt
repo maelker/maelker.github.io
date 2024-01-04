@@ -63,7 +63,7 @@ ssh-keygen -t ed25519 -C mael.kerloch@gmail.com
     [Type passphrase]
     [Type passphrase again]
 
-passphrase : maelker
+passphrase : ******
 
 Your identification has been saved in /c/Users/maël.kerloch/.ssh/id_ed25519
 Your public key has been saved in /c/Users/maël.kerloch/.ssh/id_ed25519.pub
@@ -141,3 +141,5 @@ __________________________
 La commande revert permet de créer un nouveau commit qui "annule" les actions du commit précédent
 
 $git revert <commit>
+
+Voici les commandes que j'ai vue lors de mon premier cours sur Git
