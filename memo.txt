@@ -1,0 +1,143 @@
+Introduction à Git et GitHub.
+
+__________________________________________________________________________
+
+Sites:
+
+GitHub : https://github.com
+Pack GitHub Education : https://education.github.com/pack
+Outil Git-It
+
+__________________________________________________________________________
+
+Git-It:
+
+__________________________
+Remote control:
+
+<remotename> : origin par défaut
+<branchname> : nom de la branche ou master/main
+
+$git remote add <remotename> https://github.com/maelker
+$git push <remotename> <branchname>
+
+__________________________
+Fork:
+
+pour forker il faut cloner le projet en local
+- Aller sur un projet et cliquer sur le bouton Fork
+- cloner en local
+- possibilité de remote distant avec upstream en remotename
+
+git remote add upstream https://github.com/jlord/patchwork.git
+
+__________________________________________________________________________
+
+SSH:
+
+__________________________
+$ssh -T git@github.com
+# Attempt to SSH in to github
+> Hi USERNAME! You've successfully authenticated, but GitHub does not provide
+> shell access.
+
+~/.ssh/config
+    - Host https://github.com/maelker
+    -   ForwardAgent yes
+
+__________________________
+
+SSH keys:
+
+checking for existing keys:
+
+$ls -al ~/.ssh
+    id_rsa.pub
+    id_ecdsa.pub
+    id_ed25519.pub
+
+Generate key :
+
+ssh-keygen -t ed25519 -C mael.kerloch@gmail.com
+    [Press Enter]
+    [Type passphrase]
+    [Type passphrase again]
+
+passphrase : maelker
+
+Your identification has been saved in /c/Users/maël.kerloch/.ssh/id_ed25519
+Your public key has been saved in /c/Users/maël.kerloch/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:acRa3e3PDIt972un1ToezxiVvc9BVHN/Anvux1Wp1Mo mael.kerloch@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|            .  .o|
+|       . . . +. *|
+|        + . o.+++|
+|       + .  o++.=|
+|      . S    E+o+|
+|       .     +.O+|
+|            . *oX|
+|              .&=|
+|             .*=X|
++----[SHA256]-----+
+
+Copy key:
+
+$clip < ~/.ssh/id_ed25519.pub
+#Copies the key to the clipboard
+
+Add key to github.com in :
+settings > "SSH key or Add SSH key"
+
+__________________________________________________________________________
+
+Commands :
+
+__________________________
+# Config name et email
+$git config --global user.name "maelker"
+$git config --global user.email "mael.kerloch@gmail.com"
+__________________________
+# Initialise le repository
+$cd "directory"
+$git init
+__________________________
+# Récupère les différences avec le main
+$git status
+__________________________
+# Ajoute des fichiers pour le commit
+$git add <fichier>
+$git add <dossier>
+$git add *.html
+$git add --all
+$git add *
+__________________________
+# Commit les fichiers avec message ou non
+$git commit
+$git commit -m "portfolio 1.1.0"
+
+$git log # Récupère et affiche les derniers commit
+
+$git diff 
+$git diff <fichier>
+$git diff <commit>           # comparera l'état actuel au commit <commit>
+$git diff <commit>..<commit> # Permet de comparer les fichier entre 2 commits
+
+__________________________________________________________________________
+
+Travail sur les commit :
+
+__________________________
+La commande checkout permet de faire plusieurs choses
+
+- Passer de branche en branche
+- Revenir sur un fichier par rapport à un commit
+- Revenir sur un commit
+
+$git checkout <commit>
+
+__________________________
+La commande revert permet de créer un nouveau commit qui "annule" les actions du commit précédent
+
+$git revert <commit>
