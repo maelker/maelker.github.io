@@ -28,7 +28,7 @@ The portfolio website is designed to present information about me, Maël Kerloch
 
 ## Demo
 
-You can access the live demo of the portfolio website [here](#insert-live-demo-link).
+You can access the live demo of the portfolio website [[here](#insert-live-demo-link)](https://github.com/maelker/maelker.github.io/deployments/github-pages).
 
 ## Features
 
