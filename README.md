@@ -49,6 +49,7 @@ To run this project locally, follow these steps:
 ```bash
 git clone https://github.com/maelker/maelker.github.io.git
 cd your-portfolio-repo
+```
 
 ## Technologies Used
 
