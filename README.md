@@ -41,8 +41,29 @@ You can access the live demo of the portfolio website [[here](#insert-live-demo-
 
 To run this project locally, follow these steps:
 
-1. Clone the repository:
+1. Clone the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make changes and commit them.
+4. Push to your fork and submit a pull request.
 
 ```bash
 git clone https://github.com/maelker/maelker.github.io.git
 cd your-portfolio-repo
+
+## Technologies Used
+
+- HTML
+- CSS (Bootstrap)
+- JavaScript
+- Chart.js for displaying a chart in the Experiences section.
+
+## License
+
+This project is licensed under the **MIT License**.
+
+## Contact
+
+Feel free to reach out to me through the following channels:
+
+GitHub: maelker
+Email: mael.kerloch@gmail.com
